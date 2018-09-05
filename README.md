@@ -6,7 +6,8 @@ more info visit https://realm.io/docs/java/latest/
 
 <p align="left">
 
-  <img src="https://github.com/apppath/realmandroidapp/blob/master/list-of-all-friends.png" width="350">
+  <img src="realmandroidapp/list-of-all-friends.png" width="200">
+  <img src="realmandroidapp/list-of-all-friends.png" width="200">
   
 </p>
 
