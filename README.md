@@ -8,6 +8,7 @@ more info visit https://realm.io/docs/java/latest/
 <img src="https://github.com/apppath/realmandroidapp/blob/master/list-of-all-friends.png" align="right" width="350" height="350">
 
 
+
 ## Step 1
 
 Add the class path dependency to the project level build.gradle file.
