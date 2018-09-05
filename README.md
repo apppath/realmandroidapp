@@ -226,8 +226,100 @@ public class AddActivity extends AppCompatActivity {
     }
 }
 
+```
+
+## AddActivity xml file activity_add.xml
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.AddActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:text="Add New Friends In Realm DB"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Full Name"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/full_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Email Id"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/email_id_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Profile"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/profile_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Salary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/salary_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addFriends"
+            android:text="Add Friends"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+
+</RelativeLayout>
 
 ```
+
 ## Realm Display Record MainActivity.java File
 
 ```java
@@ -322,6 +414,27 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
+
+```
+## MainActivity xml file activity_main.xml
+
+```xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".app.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
 
 ```
 
@@ -474,5 +587,90 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.FriendHold
 
 
 ```
+## Recyclerview custom layout friends_list_layout.xml
+
+```xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
 
 
+        <TextView
+            android:id="@+id/full_name_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/arsenal_bold"
+            android:text="@string/full_name"
+            android:textColor="@color/secondary_text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/email_id_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/full_name_text_view"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/arsenal"
+            android:text="@string/email_id"
+            android:textColor="@color/secondary_text"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/profile_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email_id_text_view"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/arsenal"
+            android:text="@string/profile_details"
+            android:textColor="@color/secondary_text"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/salary_text_view"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_text_view"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/arsenal"
+            android:text="@string/salary_show"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/secondary_text"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/edit_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/salary_text_view"
+            android:layout_marginTop="10dp"
+            android:src="@android:drawable/ic_input_add" />
+
+        <ImageView
+            android:id="@+id/delete_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/salary_text_view"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:src="@android:drawable/ic_delete" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+
+```
