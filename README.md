@@ -2,6 +2,11 @@
 Realm is a lightweight database that can replace both SQLite and ORM libraries in your Android projects. Compared to SQLite, Realm is faster and has lots of modern features, such as JSON support, a fluent API, data change notifications, and encryption support, all of which make life easier for Android developers.
 more info visit https://realm.io/docs/java/latest/
 
+# App Images
+
+[[https://github.com/apppath/realmandroidapp/blob/master/list-of-all-friends.png]]
+
+
 ## Step 1
 
 Add the class path dependency to the project level build.gradle file.
