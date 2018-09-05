@@ -20,7 +20,7 @@ realm {
   syncEnabled = true;
 }
 ```
-## Realm Config File RealmConfig.java
+## Realm Configuration RealmConfig.java file
 
 ```java
 
@@ -44,7 +44,7 @@ public class RealmConfig extends Application {
 
 ```
 
-## Realm Table Model File Friends.java
+## Realm Table Model Friends.java file
 
 ```java
 
@@ -105,7 +105,7 @@ public class Friends extends RealmObject {
 
 
 ```
-## Realm Insert Record AddActivity.java File
+## Insert record in Realm AddActivity.java file
 
 ```java
 
@@ -228,7 +228,7 @@ public class AddActivity extends AppCompatActivity {
 
 ```
 
-## AddActivity xml file activity_add.xml
+## AddActivity layout activity_add.xml file
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -320,7 +320,7 @@ public class AddActivity extends AppCompatActivity {
 
 ```
 
-## Realm Display Record MainActivity.java File
+## Display record in Realm MainActivity.java File
 
 ```java
 
@@ -416,7 +416,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 ```
-## MainActivity xml file activity_main.xml
+## MainActivity layout activity_main.xml file
 
 ```xml
 
@@ -438,7 +438,7 @@ public class MainActivity extends AppCompatActivity {
 
 ```
 
-## Recyclerview Adapter to display FriendAdapter.java
+## Recyclerview Adapter FriendAdapter.java file
 
 ```java
 package com.example.basicprogramming.friendslistrealms.adapter;
@@ -587,7 +587,7 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.FriendHold
 
 
 ```
-## Recyclerview Adapter layout file friends_list_layout.xml
+## Recyclerview Adapter layout friends_list_layout.xml file
 
 ```xml
 
@@ -674,7 +674,7 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.FriendHold
 </android.support.v7.widget.CardView>
 
 ```
-## Update record in Realm file EditFriendActivity.java
+## Update record in Realm EditFriendActivity.java file
 
 ```java
 package com.example.basicprogramming.friendslistrealms.app;
@@ -759,7 +759,7 @@ public class EditFriendActivity extends AppCompatActivity {
 }
 
 ```
-## Update record in file EditFriendActivity layout file activity_edit_friend.xml
+## EditFriendActivity layout activity_edit_friend.xml file
 
 ```xml
 
