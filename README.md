@@ -4,8 +4,7 @@ more info visit https://realm.io/docs/java/latest/
 
 # App Images
 
-![alt text](https://github.com/apppath/realmandroidapp/blob/master/list-of-all-friends.png){:height="300px" width="300px"}
-![image]<img src="https://github.com/apppath/realmandroidapp/blob/master/list-of-all-friends.png" width="100" height="100">
+<img src="https://github.com/apppath/realmandroidapp/blob/master/list-of-all-friends.png" width="300">
 
 ## Step 1
 
