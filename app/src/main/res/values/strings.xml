@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Friends List</string>
+    <string name="app_add">Add Friend</string>
+    <string name="app_edit">Edit Friend</string>
+    <string name="full_name">full name</string>
+    <string name="email_id">email id</string>
+    <string name="profile_details">profile details</string>
+    <string name="salary_show">salary show</string>
+</resources>

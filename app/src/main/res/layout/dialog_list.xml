@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/full_name_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/advent_pro_thin"
+        android:textColor="@color/secondary_text"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/email_id_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/alef"
+        android:textColor="@color/secondary_text"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/profile_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/alef"
+        android:textColor="@color/secondary_text"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/salary_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/alef"
+        android:textColor="@color/secondary_text"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

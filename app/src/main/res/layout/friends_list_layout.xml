@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/full_name_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/arsenal_bold"
+            android:text="@string/full_name"
+            android:textColor="@color/secondary_text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/email_id_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/full_name_text_view"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/arsenal"
+            android:text="@string/email_id"
+            android:textColor="@color/secondary_text"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/profile_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email_id_text_view"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/arsenal"
+            android:text="@string/profile_details"
+            android:textColor="@color/secondary_text"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/salary_text_view"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_text_view"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/arsenal"
+            android:text="@string/salary_show"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/secondary_text"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/edit_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/salary_text_view"
+            android:layout_marginTop="10dp"
+            android:src="@android:drawable/ic_input_add" />
+
+        <ImageView
+            android:id="@+id/delete_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/salary_text_view"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:src="@android:drawable/ic_delete" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
