@@ -4,8 +4,8 @@ more info visit https://realm.io/docs/java/latest/
 
 # App Images
 
-![alt text](https://github.com/apppath/realmandroidapp/blob/master/list-of-all-friends.png)
-
+![alt text](https://github.com/apppath/realmandroidapp/blob/master/list-of-all-friends.png){:height="300px" width="300px"}
+![alt text](https://github.com/apppath/realmandroidapp/blob/master/list-of-all-friends.png){:height="300px" width="300px"}
 ## Step 1
 
 Add the class path dependency to the project level build.gradle file.
