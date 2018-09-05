@@ -4,8 +4,7 @@ more info visit https://realm.io/docs/java/latest/
 
 # App Images
 
-[[https://github.com/apppath/realmandroidapp/blob/master/list-of-all-friends.png]]
-
+![alt text](https://github.com/apppath/realmandroidapp/blob/master/list-of-all-friends.png)
 
 ## Step 1
 
